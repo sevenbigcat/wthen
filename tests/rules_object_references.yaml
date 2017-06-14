@@ -1,0 +1,11 @@
+rules:
+  - rule:
+      name: f1
+      pre:
+        - "a = {'k': 'v'}"
+        - "b = [{'key': 'v'}]"
+      when:
+        - a['k'] == b[0]['key']
+      then:
+        - print(a)
+        - print(b)
