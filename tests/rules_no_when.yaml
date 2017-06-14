@@ -1,0 +1,7 @@
+rules:
+  - rule:
+      name: f1
+      pre:
+        - i = 1
+      then:
+        - raise RuntimeError('This should be ignored')
