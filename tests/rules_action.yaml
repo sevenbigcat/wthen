@@ -1,0 +1,11 @@
+rules:
+  - rule:
+      name: f1
+      pre:
+        - aa = 4
+      when:
+        - aa > bb
+      then:
+        - print(aa, '>', bb)
+      output:
+        - aa
