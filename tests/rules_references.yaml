@@ -1,0 +1,16 @@
+rules:
+  - rule:
+      name: f1
+      pre:
+        - a = 1
+      when:
+        - a < 2
+      then:
+        - print(a)
+        - b = 1
+  - rule:
+      name: f2
+      when:
+        - a == b
+      then:
+        - print('a', a, 'b', b)
